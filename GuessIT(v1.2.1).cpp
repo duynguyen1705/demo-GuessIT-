@@ -62,7 +62,7 @@ void replayGame()
 int getRandomNumber(int minNumber, int maxNumber)
 {
     srand(time(NULL));
-    return rand()%(maxNumber - minNumber) + minNumber;
+    return rand()%((maxNumber - minNumber)/2) + minNumber;
 }
 char takeTheHint(int computerNumber)
 {
